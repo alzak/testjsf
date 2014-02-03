@@ -105,16 +105,16 @@
                 <artifactId>maven-glassfish-plugin</artifactId>
                 <version>2.1</version>
                 <configuration>
-                    <user>${local.glassfish.user}</user>
-                    <glassfishDirectory>${local.glassfish.home}</glassfishDirectory>
-                    <domainDirectory>${local.glassfish.domainDirectory}</domainDirectory>
-                    <adminPassword>${local.glassfish.password}</adminPassword>
+                    <user>admin</user>
+                    <glassfishDirectory>/home/lxc/jMarcheCommerce/opt/glassfish3/glassfish</glassfishDirectory>
+                    <domainDirectory>/home/lxc/jMarcheCommerce/opt/glassfish3/glassfish/domains</domainDirectory>
+                    <adminPassword>jCommerce</adminPassword>
                     <autoCreate>true</autoCreate>
                     <debug>true</debug>
                     <echo>false</echo>
                     <terse>true</terse>
                     <domain>
-                        <name>{local.glassfish.domain}</name>
+                        <name>localhost-domain1</name>
                         <adminPort>4848</adminPort>
                         <httpPort>8080</httpPort>
                         <httpsPort>8443</httpsPort>
