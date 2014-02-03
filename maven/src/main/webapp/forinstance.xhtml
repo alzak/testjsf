@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+  <h:head>
+        <h:outputStylesheet name="./primefaces-marchecommerce/css/theme.css"/>
+  </h:head>
+
+<body>
+
+<div id="header">
+    <ui:insert name="header">
+    	Header area.  See comments below this line in the source.
+    	<!--  include your header file or uncomment the include below and create header.xhtml in this directory -->
+    	<!-- <ui:include src="header.xhtml"/> -->
+    	<h:form>
+           <p:megaMenu>  
+             <p:menuitem value="#{menu.dashboard}"/>
+             <p:submenu label="#{menu.sales}">  
+             <p:column>  
+                  <p:submenu label="#{menu.sales_operations}">  
+                      <p:menuitem value="#{menu.sales_orders}" url="sales/orders.xhtml" />
+                      <p:menuitem value="#{menu.sales_invoices}" url="sales/invoices.xhtml" />
+                      <p:menuitem value="#{menu.sales_shipments}" url="sales/shipments.xhtml" />
+                      <p:menuitem value="#{menu.sales_creditmemos}" url="sales/creditmemos.xhtml" />
+                      <p:menuitem value="#{menu.sales_billingagreements}" url="sales/billingagreements.xhtml" />
+                      <p:menuitem value="#{menu.sales_transactions}" url="sales/transactions.xhtml" />
+                      <p:menuitem value="#{menu.sales_recurringbilling}" url="salesrecurringbilling.xhtml/" />
+                </p:submenu>  
+            </p:column>  
+           </p:submenu>
+           <p:submenu label="#{menu.products}">  
+              <p:column>  
+                  <p:submenu label="#{menu.products_inventory}">  
+                      <p:menuitem value="#{menu.products_catalog}" url="#" />
+                      <p:menuitem value="#{menu.products_categories}" url="#" />
+                </p:submenu>  
+            </p:column>
+           </p:submenu>
+            <p:submenu label="#{menu.customers}">
+             <p:column> 
+                 <p:submenu label="#{menu.customers_operations}">
+                  <p:menuitem value="#{menu.customers_allcustomers}" url="#" />
+                  <p:menuitem value="#{menu.customer_nowonline}" url="#" />
+                 </p:submenu>
+             </p:column>
+            </p:submenu>
+             <p:submenu label="#{menu.marketing}">  
+              <p:column>  
+                  <p:submenu label="#{menu.marketing_promotions}">  
+                      <p:menuitem value="#{menu.marketing_catalogrules}" url="#" />
+                      <p:menuitem value="#{menu.marketing_cartrules}" url="#" />
+                </p:submenu>  
+            </p:column>
+           </p:submenu> 
+             <p:submenu label="#{menu.content}">  
+              <p:column>  
+                  <p:submenu label="#{menu.content_elements}">  
+                      <p:menuitem value="#{menu.content_pages}" url="#" />
+                      <p:menuitem value="#{menu.content_blocks}" url="#" />
+                      <p:menuitem value="#{menu.content_frontend}" url="#" />
+                  </p:submenu> 
+                  <p:submenu label="#{menu.content_design}">  
+                      <p:menuitem value="#{menu.content_themes}" url="#" />
+                      <p:menuitem value="#{menu.content_storedesign}" url="#" />
+                      <p:menuitem value="#{menu.content_schedule}" url="#" />
+                  </p:submenu> 
+              </p:column>
+            </p:submenu>      
+           <p:submenu label="#{menu.reports}">
+           </p:submenu> 
+      <f:facet name="options">  
+          <p:splitButton value="#{menu.stores}">  
+              <p:menuitem value="Item1"/>  
+              <p:menuitem value="Item2"/> 
+            </p:splitButton>
+          <p:splitButton value="#{menu.system}">  
+              <p:menuitem value="Item1"/>  
+              <p:menuitem value="Item2"/>   
+          </p:splitButton>
+      </f:facet>          
+    </p:megaMenu>             
+  </h:form>
+    </ui:insert>
+</div>
+
+
+<div id="content">
+  <ui:insert name="content">
+    	Content area.  See comments below this line in the source.
+    	<!--  include your content file or uncomment the include below and create content.xhtml in this directory -->
+	  	<!-- <div> -->
+    	<!-- <ui:include src="content.xhtml"/> -->  
+    	<!-- </div> -->
+  </ui:insert>
+</div>
+
+<div id="footer">
+  <ui:insert name="footer">
+    	Footer area.  See comments below this line in the source.
+    	<!--  include your header file or uncomment the include below and create footer.xhtml in this directory -->
+		<!--<ui:include src="footer.xhtml"/>  -->
+  </ui:insert>
+</div>
+
+</body>
+
+</html>
