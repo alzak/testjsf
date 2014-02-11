@@ -106,8 +106,8 @@
                 <version>2.1</version>
                 <configuration>
                     <user>admin</user>
-                    <glassfishDirectory>/home/lxc/jMarcheCommerce/opt/glassfish3/glassfish</glassfishDirectory>
-                    <domainDirectory>/home/lxc/jMarcheCommerce/opt/glassfish3/glassfish/domains</domainDirectory>
+                    <glassfishDirectory>/lxc/march/opt/glassfish3/glassfish</glassfishDirectory>
+                    <domainDirectory>//lxc/march/opt/glassfish3/glassfish/domains</domainDirectory>
                     <adminPassword>jCommerce</adminPassword>
                     <autoCreate>true</autoCreate>
                     <debug>true</debug>

@@ -29,5 +29,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="ch.actifsource.ACTIFSOURCE_CONTAINER"/>
 	<classpathentry kind="src" path="src-gen"/>
+	<classpathentry kind="lib" path="src/main/resources/primefaces-marchecommerce/theme.css"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
